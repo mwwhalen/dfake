@@ -1,0 +1,1 @@
+java -jar dfake.jar -dfake %*

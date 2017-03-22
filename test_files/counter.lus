@@ -1,0 +1,9 @@
+node counter() returns (sum: int); 
+var
+	prop1: bool;
+let
+   --%MAIN
+   sum = 1 -> pre(sum) + 1;
+   prop1 = (sum < 10);
+   --%PROPERTY prop1;
+tel; 

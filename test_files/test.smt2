@@ -1,0 +1,10 @@
+(define-fun is-power-of-two () Bool) 
+(declare-const a (_ BitVec 8))
+(assert 
+ (not (= (is-power-of-two a) 
+         (or (= a #x00) 
+             (= a #x01) 
+             (= a #x02) 
+             (= a #x04) 
+             ))))
+(check-sat)
