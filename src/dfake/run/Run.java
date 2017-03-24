@@ -243,7 +243,8 @@ public class Run {
    }
 
    protected boolean isSat(String output) {
-       return output.trim().startsWith("sat");
+       return output.trim().startsWith("sat" + System.lineSeparator()) || 
+    		  output.contains(System.lineSeparator() + "sat" + System.lineSeparator());
    }
 
    protected boolean isUnsat(String output) {
